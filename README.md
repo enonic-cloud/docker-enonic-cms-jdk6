@@ -1,15 +1,15 @@
 # Base image for Enonic CMS
-Generic base image for Enonic CMS
+Generic base image for Enonic CMS based on Oracle JDK 6
 
 ## Build local
 ```
-docker build -t enoniccloud/enonic-cms .
+docker build -t enoniccloud/enonic-cms-jdk6 .
 ```
 
 ## Run
 This image should be a base for creating own images with Enonic CMS.
 ```
-docker run -it --rm --name java7 enoniccloud/enonic-cms
+docker run -it --rm --name enonic-cms-jdk6 -e "CMS_DB_PASSWORD=fisk" enoniccloud/enonic-cms-jdk6
 ```
 
 
