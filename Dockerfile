@@ -52,7 +52,7 @@ RUN mkdir /cms.home
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Get the jdbc driver
-ENV JDBC_VERSION 9.4-1203.jdbc41
+ENV JDBC_VERSION 9.4-1203.jdbc4
 RUN curl https://jdbc.postgresql.org/download/postgresql-$JDBC_VERSION.jar -o $CATALINA_HOME/lib/postgresql-$JDBC_VERSION.jar
 
 
