@@ -1,4 +1,4 @@
-FROM enoniccloud/docker-java6
+FROM enoniccloud/java6
 
 MAINTAINER Erik Kaareng-Sunde <esu@enonic.com>
 
